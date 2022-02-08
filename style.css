@@ -1,9 +1,14 @@
 /* stylelint-disable prettier/prettier */
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 body {
   min-height: 100vh;
-  background-color: skyblue;
+  background-color: whitesmoke;
+  font-family: 'Bebas Neue', sans-serif;
 }
+
+
 
 *,
 *::before,
@@ -12,53 +17,49 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-a {
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
+
+
+h1 {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  font-size: 40px;
+  letter-spacing: 5px;
 }
-button {
-  background-color: transparent;
-  color: inherit;
-  border-width: 0;
-  padding: 0;
-  cursor: pointer;
+
+.loader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255,255,255,0.8);
 }
-figure {
-  margin: 0;
+
+.image-container {
+  margin: 10px 30%;
 }
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-  margin: 0;
+
+.image-container img {
+  width: 100%;
+  margin-top: 5px;
 }
-input {
-  outline: none;
-  border: 0;
+
+.loader img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-ul,
-ol,
-dd {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
-p {
-  margin: 0;
-}
-cite {
-  font-style: normal;
-}
-fieldset {
-  border-width: 0;
-  padding: 0;
-  margin: 0;
+
+
+@media screen and (max-width: 600px) {
+  .image-container {
+    margin: 10px 10px;
+  }
+
+  h1 {
+    font-size: 20px;
+    margin-bottom: 20px
+  }
 }
